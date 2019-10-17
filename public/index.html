@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Myster.io</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./parallax/parallax.min.js"></script>
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <div id="log" class="log">Connected</div>
+    <ul class="pages">
+      
+      <li class="chat page">
+        <div class="chatArea">
+          <ul class="messages"></ul>
+        </div>
+        <input class="inputMessage" placeholder="Input Here..."/>
+      </li>
+      <li class="login page">
+        <div class="form">
+          <h3 class="title">Welcome to <b>Myster.io</b>!<br>How should I refer to you?
+          </h3>
+          <input class="usernameInput" type="text" maxlength="15" />
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

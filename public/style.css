@@ -1,0 +1,247 @@
+
+/* Fix user-agent */
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 100%;
+}
+::-webkit-scrollbar-button {
+  width: 40px;
+  height: 40px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e180;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none #ffffff;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+::-webkit-scrollbar-track:active {
+  background: #000000;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, input {
+  font-family: Consolas,monaco,monospace;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.bot{
+  color: white !important;
+}
+
+.background{
+  position: absolute;
+  display: block; 
+  top: 0;  
+  left: 0;
+  z-index: 0;
+}
+
+.thicc{
+  font-weight: bolder;
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+/* Pages */
+
+.pages {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/* Login Page */
+
+.login.page {
+  background-color: #000;
+}
+
+.login.page .form {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.login.page .form .usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 400px;
+  color: #009700;
+}
+
+.login.page .title {
+  font-size: 200%;
+}
+
+.login.page .usernameInput {
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+
+.login.page .title, .login.page .usernameInput {
+  color: #fff;
+  font-weight: 100;
+}
+
+/* Chat page */
+
+.chat.page {
+  display: none;
+  background-color: black;
+}
+
+/* Font */
+
+.messages {
+  font-size: 150%;
+}
+
+.inputMessage {
+  font-size: 100%;
+}
+
+.log {
+  position: absolute;
+  overflow: hidden;
+
+  right: 0;
+  top: 0;
+  height: auto;
+  width: auto;
+  color: red;
+  font-size: 18pt;
+  padding: 10px 20px;
+  text-align: right;
+  z-index: 1
+}
+
+/* Messages */
+
+.chatArea {
+  height: 100%;
+  padding-bottom: 80px;
+}
+
+.messages {
+  height: 100%;
+  margin: 0;
+  overflow-y: scroll;
+  padding: 10px 20px 10px 20px;
+}
+
+.message.typing .messageBody {
+  color: #ffffff;
+}
+
+.message .messageBody {
+ color: #757575;
+}
+
+.username {
+  font-weight: 700;
+  overflow: hidden;
+  padding-right: 15px;
+  text-align: right;
+}
+
+/* Input */
+
+.inputMessage {
+  border: 10px solid transparent;
+  bottom: 0;
+  color: #fff;
+  height: 100px;
+  left: 0;
+  font-size: 2rem;
+  outline: none;
+  padding-left: 10px;
+  position: fixed;
+  right: 0;
+  background: transparent;
+  width: 100%;
+}
+
+input:hover{
+  cursor: text
+}
+
+.serverUsername{
+  color: #ffa500;
+  font-weight: bolder;
+}
+
+blink {
+  animation: blink-animation 500ms steps(5, start) infinite;
+}
+
+marquee {
+  color: pink!important;
+}
+
+.rainbow {
+background: linear-gradient(90deg, rgba(255,34,34,1) 0%, rgba(255,34,34,1) 21%, rgba(255,34,255,1) 31%, rgba(34,34,255,1) 40%, rgba(34,255,255,1) 49%, rgba(34,255,34,1) 58%, rgba(34,255,34,1) 61%, rgba(255,255,34,1) 69%, rgba(255,34,34,1) 78%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 4s linear infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
